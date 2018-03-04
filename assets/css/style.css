@@ -1,0 +1,72 @@
+/* ////// FUENTE ////// */
+@font-face {
+    font-family: "Monserrat";
+    font-style: normal;
+    font-weight: normal;
+    src: local("?"), url("assets/fonts/Monserrat-Regular.ttf") format("truetype");
+}
+
+/* ////// SECCIÓN NARANJA ////// */
+#orange-section {
+    background: #ef7c1a;
+    float:left;
+    width: 40%;
+}
+
+@media (min-width: 768px) {
+    
+    #orange-section img {
+        width: 500px;
+        margin-right: 1.5em;
+    }
+}
+
+/* ////// SECCIÓN BLANCA ////// */
+#white-section {
+    background: #fff;
+    float:left;
+    width: 60%; 
+}
+
+/* ////// WIFI ICONOS ////// */
+.wifi-icon {
+  width: 80px;
+  height: 50px;
+}
+
+.wifi {
+  width: 45px;
+  height: 45px;
+}
+
+/* ////// LISTAS ////// */
+
+
+#navigation nav ul {
+    list-style: none;
+}
+
+/* ////// ESTILO DE LOS BOTONES ////// */
+
+.btn-common {
+    background-color: #000;
+    color: #fff;
+    font-weight: bold;
+    border: 5px solid #000;
+    padding: 1em;
+    width: 35%;
+    text-align: center;
+    text-decoration: none;
+    font-size: 22px;
+    margin-left: 50px;
+    border-radius: 12px;
+}
+.btn-common:hover {
+    color:#000;
+    font-weight: bold;
+    background: #fff;
+    width: 35%;
+    border-style: solid;
+    border-bottom-color: #000;
+    border-radius: 12px;
+}
