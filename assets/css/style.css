@@ -1,12 +1,13 @@
 /* ////// FUENTE ////// */
 body {
+    overflow-y: hidden;
     font-family: 'Montserrat', sans-serif;
     font-style: normal;
-    font-weight: normal;
+    font-weight: bolder;
 }
 
 h2 {
-    font-size: 55px;
+    font-size: 30px;
     font-weight: bold ;
 }
 
@@ -24,11 +25,22 @@ h2 {
     padding-top: 20px;
 }
 
+/* ////// SECCIÓN NARANJA ////// */
+
+/* Logo */
+.sidenav img {
+        width: 350px;
+        padding: 20% 0% 5% 10%;
+        margin-right: 1em;
+        margin-left: 2em;
+}  
+
+/* Texto */
 .sidenav a {
-    padding: 6px 6px 6px 32px;
+    padding: 50px 6px 6px 15%;
     text-decoration: none;
-    font-size: 25px;
-    color: #000;
+    font-size: 20px;
+    color: #fff;
     display: block;
 }
 
@@ -36,16 +48,28 @@ h2 {
     color: #f1f1f1;
 }
 
-.sidenav img {
-        width: 470px;
-        padding: 30% 0% 10% 0%;
-        margin-right: 1em;
-        margin-left: 2em;
-}        
+/* Puntos en el texto */
+.dot {
+    height: 35px;
+    width: 35px;
+    background-color: #262626;
+    border-radius: 59%;
+    display: inline-block;
+}
+
+/* Triangulos Blancos (hay que hacerlos en HTML <div class="triangle-lft"></div>)*/
+.triangle-left {
+	width: 0;
+	height: 0;
+	border-top: 25px solid transparent;
+	border-right: 50px solid #fff;
+	border-bottom: 25px solid transparent;
+}
 
 /* ////// SECCIÓN BLANCA ////// */
 
 .main {
+    overflow-y: hidden;
     margin-left: 40%; /*igual al ancho del sidenav*/
     padding: 5% 0% 0% 10%;
 }
@@ -56,23 +80,39 @@ h2 {
 }
 
 /* ////// SCROLL BOX ////// */
-scroll-box {
-    background-color: #fff;
-    width: 400px;
-    height: 300px;
-    overflow: scroll;
+.scrollbox {
+    overflow: auto;
+    width: 600px;
+    height: 200px;
+    border: 1px solid #888;
+}
+
+/* ancho del riel */
+#scroll::-webkit--scrollbar {
+    width: 10px;
+}
+ 
+/* manejador */
+#scroll::-webkit--scrollbar-thumb {
+    background: #000; 
+    border-radius: 6px;
+}
+
+/* manejador hover */
+#scroll::-webkit--scrollbar-thumb:hover {
+    background: #555; 
 }
 
 
 /* ////// WIFI ICONOS ////// */
 .wifi-icon {
-  width: 80px;
-  height: 50px;
+  width: 70px;
+  height: 60px;
 }
 
 .wifi {
-  width: 45px;
-  height: 45px;
+  width: 40px;
+  height: 40px;
 }
 
 /* ////// LISTAS ////// */
@@ -83,12 +123,18 @@ scroll-box {
 }
 
 /* ////// ESTILO DE LOS BOTONES ////// */
+.botonbox 
+ {
+  padding-top: 2em;
+  margin-top: 2em;
+}
+
 
 .btn-common {
-    background-color: #000;
+    background-color: #262626;
     color: #fff;
     font-weight: bold;
-    border: 5px solid #000;
+    border: 5px solid #262626;
     padding: 0.6em;
     width: 35%;
     text-align: center;
@@ -98,11 +144,29 @@ scroll-box {
     border-radius: 12px;
 }
 .btn-common:hover {
-    color:#000;
+    color:#262626;
     font-weight: bold;
     background: #fff;
     width: 35%;
     border-style: solid;
-    border-bottom-color: #000;
+    border-bottom-color: #262626;
     border-radius: 12px;
+}
+
+i {
+  border: solid ;
+  border-width: 0 4px 4px 0;
+  display: inline-block;
+  padding: 6px;
+}
+
+
+.right {
+    transform: rotate(-45deg);
+    -webkit-transform: rotate(-45deg);
+}
+
+.left {
+    transform: rotate(135deg);
+    -webkit-transform: rotate(135deg);
 }
